@@ -1,0 +1,16 @@
+ERRORS
+1. Правило тестування - 1 перевірка 1 тесткейс. В перевірці невірного формату email також невірний пароль
+2. В файлі в  тесті login with wrong email format credentials read data from невірно вказано expected test -  to have text Invalid email addressssss. , замсть  Invalid email address.
+3. Конфігураційний файл був збережений в не дефолтному місці
+4. Весь проект на ts а файл 2e.js  в support на js
+5. По замовчуванню файли тестів з розширенням cy.js І тоді іх не потрібно вказувати  в cypress.config.ts файлі specpattern
+6. При відкритті звіту виникає помилка 
+allure-results does not exist
+Report successfully generated to allure-report
+PS E:\Zoryana\AllureCheck\cypressAllureCheck> npx allure open
+2022-10-08 22:14:00.644:INFO::main: Logging initialized @348ms to org.eclipse.jetty.util.log.StdErrLog
+Server started at <http://192.168.1.26:62782/>.
+ЗАУВАЖЕННЯ:
+1.	У fixtures не потрібно дублювати декілька разів одні і ті ж дані (пароль, email)
+2.	README не зрозуміло до чого відноситься пункт Change "Username" and "Password"
+3.	myAccountPage.ts містить дані, а тест  myAccountPage не містить перевірок з цими даними
